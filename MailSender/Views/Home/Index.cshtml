@@ -1,0 +1,11 @@
+﻿@model MailSender.ViewModels.HomeIndexViewModel
+
+<div class="text-center">
+    <form method="post">
+        <input type="text" name="Imie" asp-for="FirstName"/>
+        <input type="text" name="Nazwisko" asp-for="LastName"/>
+        <input type="email" name="Adres email" asp-for="Email"/>
+
+        <input type="submit" value="Dalej" asp-action="Index"/>
+    </form>
+</div>
