@@ -1,0 +1,9 @@
+﻿@model MailSender.ViewModels.HomeMailViewModel
+
+<div class="text-center">
+    <form method="post">
+        <datalist ></datalist>
+        <textarea asp-for="Message">Treść wiadomości</textarea>
+        <input type="submit" name="Wyślij" asp-action="Mail"/>
+    </form>
+</div>
